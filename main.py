@@ -9,7 +9,11 @@ from ttkbootstrap import Style
 root = tk.Tk()
 root.title("ArtfinityPix")
 root.geometry("700x500")
-root.config(bg="white")
+image_url = "https://img.freepik.com/free-photo/vivid-blurred-colorful-background_58702-2655.jpg?w=2000&t=st=1690629280~exp=1690629880~hmac=dfb9c890b8dddaae59b504a6561778dab1f821d824c38ca83f8dfcb5342ba7f9"
+image_data = requests.get(image_url).content
+image = ImageTk.PhotoImage(Image.open(io.BytesIO(image_data)))
+background_label = ttk.Label(root, image=image)
+background_label.place(x=0, y=0, relwidth=1, relheight=1)
 root.resizable(False, False)
 
 style = Style(theme="flatly")
@@ -19,7 +23,7 @@ def display_image(category):
     data = requests.get(url).json()
     img_data = requests.get(data["urls"]["regular"]).content
 
-    photo = ImageTk.PhotoImage(Image.open(io.BytesIO(img_data)).resize((600, 400), resample=Image.LANCZOS))
+    photo = ImageTk.PhotoImage(Image.open(io.BytesIO(img_data)).resize((700, 400), resample=Image.LANCZOS))
     label.config(image=photo)
     label.image = photo
 
