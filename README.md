@@ -16,6 +16,11 @@ To run the ArtfinityPix app on your local machine, follow these steps:
 2. Install the required dependencies using `pip install -r requirements.txt`.
 3. Run the app using `python main.py`.
 
+## Screenshots
+![Alt text](https://github.com/X-XENDROME-X/ArtfinityPix/blob/main/IMG1.png)
+![alt text](https://github.com/X-XENDROME-X/ArtfinityPix/blob/main/IMG2.png)
+![alt text](https://github.com/X-XENDROME-X/ArtfinityPix/blob/main/IMG3.png)
+
 ## About
 I created ArtfinityPix as a high school project to learn and practice Python programming and GUI development using the `tkinter` library. The app demonstrates how to interact with an API, display images in a GUI, and handle user interactions. Feel free to explore the code and use it as a reference for your own projects.
 
