@@ -39,7 +39,7 @@ def download_image():
             download_path = os.path.join(os.path.expanduser("~"), "Downloads", "generated_image.jpg")
             with open(download_path, "wb") as f:
                 f.write(download_img_data)
-            messagebox.showinfo("Download Successful", f"Image downloaded successfully to {download_path}!")
+            messagebox.showinfo("Download Successful", f"Image downloaded successfully to the Downloads Folder!")
         except Exception as e:
             messagebox.showerror("Error", f"An error occurred while downloading the image: {e}")
 
