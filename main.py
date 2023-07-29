@@ -4,7 +4,7 @@ import io
 import tkinter as tk
 from tkinter import ttk, messagebox
 from PIL import Image, ImageTk
-from ttkbootstrap import Style
+from ttkbootstrap import Styl
 
 root = tk.Tk()
 root.title("ArtfinityPix")
